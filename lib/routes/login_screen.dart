@@ -60,9 +60,9 @@ class LoginScreen extends StatelessWidget {
                      fontSize: 16
                      ),
                    ),
-                   GestureDetector(
+                  GestureDetector(
                      onTap: (){
-                       Navigator.pushNamed(context, signup_screen.id);
+                       Navigator.pushNamed(context, SignupScreen.id);
                      },
                      child: Text('Sign up',
                      style: TextStyle(

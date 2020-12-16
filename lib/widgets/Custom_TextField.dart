@@ -10,9 +10,7 @@ class CustomTextField extends StatelessWidget {
     switch(hint)
     {
       case 'Enter your name' : return'Name is empty !';
-      case'Enter your phone': return'Phone is empty !';
-      case'Enter your address': return'Address is empty !';
-      case'Enter your email': return'Email is empty !';
+      case'Enter your email': return'email is empty !';
       case'Enter your password': return'Password is empty !';
     }
   }
