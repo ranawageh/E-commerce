@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart' ;
 import 'package:e_commerce/constance.dart';
+import 'login_screen.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:e_commerce/routes/login_screen.dart';
 import 'package:e_commerce/widgets/Custom_TextField.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:google_sign_in_all/google_sign_in_all.dart';
+import 'package:google_sign_in/google_sign_in.dart';
+import 'package:extension_google_sign_in_as_googleapis_auth/extension_google_sign_in_as_googleapis_auth.dart';
 
-class SignupScreen extends StatelessWidget {
+class signup_screen extends StatelessWidget {
     final GlobalKey<FormState> _globalkey= GlobalKey<FormState>();
     static String id ='signupScreen';
 
@@ -24,6 +30,9 @@ class SignupScreen extends StatelessWidget {
              CustomTextField(
                  hint: 'Enter your name',
                 icon: Icons.person,
+             ),
+              SizedBox(
+               height: height*.02,
              ),
              CustomTextField(
                 hint: 'Enter your email',
@@ -82,6 +91,7 @@ class SignupScreen extends StatelessWidget {
                    )
                  ],
                )
+        
         ],
       ),
     ),
